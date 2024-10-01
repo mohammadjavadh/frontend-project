@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/lessons.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon" href="bg/icon-no-background.png" />
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <title>Violin Vibes</title>
+</head>
+<body>
+<header>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container nav-bar w-100">
+      <h1 class="logo">ViolinVibes</h1>
+      <ul class="nav-links d-sm-flex d-none">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="lessons.html">Lessons</a></li>
+        <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <i class="fas fa-bars small-menu d-block d-sm-none" id="s-menu"></i>
+      <div class="small-menu-nav d-none" id="small-menu-nav">
+        <i class="fa fa-close" style="font-size:24px" id="fa-close"></i>
+        <ul class="s-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="lessons.html">Lessons</a></li>
+          <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- HERO SECTION -->
+      <section class="lessons-header">
+        <div class="blankblur"></div>
+        <div class="Lesson-content">
+          <p>
+            Explore our <br>Lessons
+          </p>
+          <!-- <div class="content-btn">
+            <a href="#lesson-header" class="ctn-btn">
+              <span class="arrow-icon">&#8594;</span>
+            </a>
+          </div> -->
+        </div>
+      </section>
+</header>
+
+<main>
+    <!-- Lessons Plan Content -->
+  <div class="lessons-container mt-5">
+    <h1 class="text-center mb-4" id="lesson-header">Our Violin Lessons Plans</h1>
+    
+    <p class="text-center">Discover our comprehensive and personalized Violin lessons.</p>
+
+    <!-- Meet Our Instructors -->
+    <section class="my-5">
+      <h2 class="text-center mb-4">Meet Our Instructors</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/users/zack-master.jpg" class="card-img-top" alt="Instructor 1">
+            <div class="card-body">
+              <h3 class="card-title">Zack Taylor</h3>
+              <p class="card-text">Zack Taylor a violin teacher with years of experience and expertise in teaching beginner to advanced musicians, is passionate about the art of music.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/users/jennifer-master.jpg" class="card-img-top" alt="Instructor 2">
+            <div class="card-body">
+              <h3 class="card-title">Jennifer Davis</h3>
+              <p class="card-text">Jennifer Davis an violin teacher with an artistic vision and unique teaching methods, helps musicians to bring the beauty of music to their instrument with heart and soul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lesson Plans -->
+    <section class="my-5">
+      <h2 class="text-center mb-4">Lesson Plans</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Violin steps for beginners:</h3>
+              <ul class="list-group">
+                <li class="list-group-item">how to properly hold the violin and bow</li>
+                <li class="list-group-item">Notation lesson and basic music theory</li>
+                <li class="list-group-item">the correct bowing of the violin</li>
+                <li class="list-group-item">Simple exercises for hand and bow coordination</li>
+                <li class="list-group-item">Playing elementary pieces</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Violin steps for Intermediate</h3>
+             
+              <ul class="list-group">
+                <li class="list-group-item">Improving violin bowing techniques</li>
+                <li class="list-group-item">Positioning exercises and changing positions</li>
+                <li class="list-group-item">Mastering vibrato and trill to beautify the sound</li>
+                <li class="list-group-item">Complex exercises for fingers</li>
+                <li class="list-group-item">Performing etudes and advanced classical pieces</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Lesson Enrolling Section -->
+  <section class="lesson-enrolling">
+    <div class="container">
+      <h2>Lesson Enrolling</h2>
+      <div class="lesson-options">
+        <div class="lesson-option">
+          <h3>Beginner Violin</h3>
+          <p>Getting to know the violin and learning to read notes.</p>
+          <p>Duration: 30 minutes</p>
+          <p>Frequency: twice a week</p>
+          <p>Monthly Fee: $200</p>
+          <button class="enroll-button btn btn-clr text-white" data-subject="Beginner Violin">Enroll</button>
+        </div>
+        <div class="lesson-option">
+          <h3>Intermediate Violin</h3>
+          <p>Strengthening bowing techniques, performing medium etudes.</p>
+          <p>Duration: 60 minutes</p>
+          <p>Frequency: Once a week</p>
+          <p>Monthly Fee: $500</p>
+          <button class="enroll-button btn btn-clr text-white" data-subject="Intermediate Violin">Enroll</button>
+        </div>
+        <div class="lesson-option">
+          <h3>Advanced  Violin</h3>
+          <p>Preparation for professional performances.</p>
+          <p>Duration: 75 minutes</p>
+          <p>Frequency: Once a week</p>
+          <p>Monthly Fee: $1000</p>
+          <button class="enroll-button btn btn-clr text-white" data-subject="Advanced  Violin">Enroll</button>
+        </div>
+        <!-- Add more lesson options here -->
+      </div>
+    </div>
+  </section>
+  <section class="schedule-section">
+    <h2 class="text-center mb-4">Schedule and Availability</h2>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Lesson</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>9:00 AM - 9:30  AM</td>
+            <td>Beginner Piano</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Intermediate Piano</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>5:00 PM - 6:15 PM</td>
+            <td>Advanced  Piano</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Intermediate Piano</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>9:00 AM - 10:15 PM</td>
+            <td>Advanced  Piano</td>
+          </tr>
+          <!-- Add more rows for other days and lessons -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+ <!-- Upcoming Events Section -->
+ <section class="upcoming-events-section">
+  <h2 class="text-center mb-4">Special Events</h2>
+  <div class="container">
+    <div class="row" id="events-container">
+      <!-- Events will be added here dynamically using JavaScript -->
+    </div>
+  </div>
+</section>
+
+
+
+   
+<!-- newsletter -->
+<hr>
+<!--div class="container news flow ">
+  <h2 class="news__title">Sign up for newsletters</h2>
+  <div class="news-grid">
+     <div class="card__group">
+        <div class="card active">
+           <input class="custom" type="checkbox" id="check1" / checked>
+           <label for="check1">
+              <h5>Daily Bits</h5>
+              <p>Today’s biggest news</p>
+           </label>
+        </div>
+        <div class="card">
+           <input class="custom" type="checkbox" id="check2" />
+           <label for="check2">
+              <h5>Week in Review</h5>
+              <p>The week’s biggest news</p>
+           </label>
+        </div>
+     </div>
+     <div class="card__group">
+        <div class="card">
+           <input class="custom" type="checkbox" id="check3" />
+           <label for="check3">
+              <h5>The Exchange</h5>
+              <p>Art, money and markets</p>
+           </label>
+        </div>
+        <div class="card">
+           <input class="custom" type="checkbox" id="check4" />
+           <label for="check4">
+              <h5>Event Updates</h5>
+              <p>Announcements and discounts</p>
+           </label>
+        </div>
+     </div>
+     <div class="card__group">
+        <div class="card">
+           <input class="custom" type="checkbox" id="check5" />
+           <label for="check5">
+              <h5>Sponsorship</h5>
+              <p>Partnership insights</p>
+           </label>
+        </div>
+        <div class="card">
+           <input class="custom" type="checkbox" id="check6" />
+           <label for="check6">
+              <h5>This Week in Art</h5>
+              <p>Art news of the week</p>
+           </label>
+        </div>
+     </div>
+  </div>
+  <div class="news__form">
+     <input type="email" placeholder="Enter your email address" />
+     <button class="news__btn">Subscribe</button>
+  </div>
+</div>
+  </div-->
+ 
+</main>
+
+<footer>
+  <div class="container container-ed">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>ViolinVibes</h2>
+      </div>
+      <div class="footer-shortcuts">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <p class="footer-credits">© 2024 ViolinVibes. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

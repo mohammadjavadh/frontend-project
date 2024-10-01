@@ -1,0 +1,26 @@
+main{
+    margin-top: 4%;
+}
+.about-us-image{
+    width: 39rem;
+    height: 100%;
+}
+.img-div{
+    height: 100vh;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    z-index: 1000;
+    padding: 0;
+    background-color: rgba(50, 50, 50, 0.8);
+    backdrop-filter: blur(10px);
+}
+footer {
+    background-color: #f9f9f9;
+    margin-top: 0%;
+    padding: 3% 0%;
+  }

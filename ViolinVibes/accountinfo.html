@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\assets\css\accountinfo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Account info | user profile</title>
+</head>
+<body>
+   
+     <!-- Sidebar -->
+     <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="user.html"><i class="fas fa-home"></i> Home</a>
+        <a href="accountinfo.html"><i class="fas fa-user"></i> Account Info</a>
+        <a href="classinfo.html"><i class="fas fa-chalkboard-teacher"></i> Class Info</a>
+        
+        <!-- Sign out link at the bottom -->
+        <a href="index.html" class="sign-out"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="user-info-form">
+            <h2>User Profile</h2>
+            <img id="profilePic" class="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
+            <label for="file-upload" class="custom-file-upload">
+                Upload Photo
+            </label>
+            <input id="file-upload" type="file" accept="image/*" onchange="previewImage(event)">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="Ali Ahmadi">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="ali.ahmadi@example.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" value="09123456789">
+                </div>
+                <div class="form-group">
+                    <label for="level">Level:</label>
+                    <select id="level">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advance">Advance</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="saveChanges()">Save Changes</button>
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function(){
+                const output = document.getElementById('profilePic');
+                output.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function saveChanges() {
+            alert('Changes saved successfully!');
+        }
+    </script>
+</body>
+</html>

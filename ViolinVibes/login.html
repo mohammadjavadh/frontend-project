@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="bg/icon-no-background.png" />
+    <title>Violin Vibes | Sign in</title>
+  </head>
+  <body>
+    <main>
+      <section class="Login-box">
+        <div class="circle">
+          <span>
+            <!--div>
+              <img src="bg/icon-no-background.png" alt="Violin Vibes" class="logo">
+            </div-->          
+          </span>
+        </div>
+        <div class="Form-box">
+          <div class="form-info" id="loginForm">
+            <p>Login Here</p>
+            <form action="userLogin.php" method="post">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="USERNAME"
+                required
+              />
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="EMAIL"
+                required
+              />
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="PASSWORD"
+                required
+              />
+              <div class="login-btn" id="loginBtn">
+                <button>Login</button>
+              </div>
+              <div class="options">
+                <!-- <div class="gradient-checkbox">
+                  <input type="checkbox" name="remember-me" id="remember_me" />
+                  <label for="remember-me">keep me logged in</label>
+                </div> -->
+                <br />
+                <p><a href="#">forgot password?</a></p>
+                <p><a href="signup.html">don't have an account?</a></p>
+              </div>
+              <section class="B2H">
+                <a href="index.html">
+                    <img src="bg/icon-home.png" alt="Back to Home">
+                </a>
+            </section>            
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <!-- js -->
+    <!-- <script src="assets/js/login.js"></script> -->
+  </body>
+</html>

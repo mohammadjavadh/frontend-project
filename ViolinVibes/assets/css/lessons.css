@@ -1,0 +1,311 @@
+
+:root {
+  --clr-neutral-300: hsl(232, 41%, 97%);
+  --clr-neutral-400: hsl(98, 0%, 50%);
+  --clr-neutral-900: #020203;
+
+  --clr-accent: #A24C1A;
+
+  /* font weight */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Type */
+  --ff-primary: "Mulish", sans-serif;
+}
+.lessons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lessons-header{
+    background-image: url('../../images/lessonsImg/violin-dark.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 35rem;
+    overflow: hidden;
+    position: relative;
+}
+.blankblur{
+    background-color: #00000069;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+}
+.Lesson-content{
+    color: #FFF;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 5;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+.content-btn {
+    position: absolute;
+    top: 3rem;
+    left: 50rem;
+    width: 40%;
+  }
+  
+  .ctn-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2); /* Glassmorphism background */
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 7vh;
+  }
+  
+  .arrow-icon {
+    position: absolute;
+    left: 2rem;
+    top: 1.2rem;
+    transform: translate(0%, -50%);
+    transition: transform 0.2s;
+    font-size: 55px;
+  }
+  
+  .ctn-btn:hover .arrow-icon {
+    transform: translate(50%, -50%);
+  }
+  
+  .ctn-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Lesson Enrolling Section */
+.lesson-enrolling {
+  padding: 5rem 20px;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 17px;
+  box-shadow: 0px 5px 85px -52px #534e4a;
+  margin-top: 6rem;
+}
+
+.lesson-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.lesson-option {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-clr{
+  background-color: var(--clr-accent);
+}
+.btn-clr:hover{
+  background-color: #592f17;
+  transition: 0.4s;
+}
+/* Schedule Table */
+.table{
+  width: 100%;
+    height: 25rem;
+}
+.table th, .table td {
+  vertical-align: middle;
+}
+
+/* Highlighted Row */
+.highlighted {
+  background-color: #f7f7f7;
+}
+
+.schedule-section{
+  margin-top: 10rem;
+  width: 85%;
+}
+
+/* upcoming events */
+.upcoming-events-section{
+  margin-top: 5rem;
+}
+/* newsletter */
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, var(--spacer));
+}
+
+.news {
+  border: 1px solid black;
+  transition-delay: 0.3s; /* Delay the transition after hover */
+
+}
+.news:hover {
+  animation:shadow-pop-tr 0.3s cubic-bezier(.47,0.000,.745,.715) both ;
+}
+
+.news__title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5em;
+}
+
+.news-grid {
+  display: grid;
+}
+
+.custom {
+  opacity: 0;
+  position: relative;
+}
+
+.custom + label {
+  display: grid;
+  grid-template-columns: 24px auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 1em;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom[type="checkbox"] + label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #8f94a1;
+  background: transparent;
+}
+
+.custom[type="checkbox"] + label::after {
+  content: "\2713";
+  color: white;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  transform: scale(0);
+  transition: all 300ms ease-in-out;
+}
+
+.custom[type="checkbox"]:checked + label::before {
+  background-color: var(--clr-accent);
+}
+
+.custom[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+
+h5 {
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+p {
+  grid-column: 2/ -2;
+}
+.card {
+  padding: 0 12px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.card.active {
+  background-color: var(--clr-neutral-300);
+  height: 88px;
+  width: auto;
+}
+
+/* form */
+.news__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+input[type="email"] {
+  border: 0;
+  outline: 0;
+  padding: 20px 30px;
+  border-radius: 3px;
+  border: 1px solid #8f94a1;
+}
+
+.news__btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  background-color: var(--clr-accent);
+  padding: 20px 30px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.shadow-pop-tr{
+  animation:shadow-pop-tr .3s cubic-bezier(.47,0.000,.745,.715) both
+}
+
+@keyframes shadow-pop-tr{
+  0%{
+    box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;
+    transform:translateX(0) translateY(0)}
+  100%{
+    box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;
+    transform:translateX(-8px) translateY(8px)}
+  }
+
+
+hr{
+  width: 92%;
+  color: #A24C1A;
+}
+@media (min-width: 550px) {
+  .news-grid {
+     grid-auto-flow: column;
+     grid-template-columns: repeat(3, 1fr);
+  }
+  .news {
+    padding: 4.125em 2.25em;
+    margin-top: 5rem;
+  }
+  .news__form {
+     flex-direction: row;
+     gap: 10px;
+  }
+  input[type="email"] {
+     flex: 0 0 480px;
+  }
+}
+@media screen and (max-width:426px){
+  .Lesson-content > p{
+    font-size: 60px;
+    padding-top: 8rem;
+  }
+}
+@media screen and (max-width:376px){
+  .Lesson-content > p {
+    font-size: 60px;
+    padding-top: 8rem;
+    padding-right: 1rem;
+ }
+}

@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    
+}
+/* Style for sidebar */
+.sidebar {
+    width: 200px; /* Reduced width */
+    background-color: #8b3e0e; /* Dark burgundy */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.sidebar a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #9b500d; /* Lighter burgundy */
+    display: flex;
+    align-items: center;
+}
+.sidebar a:hover {
+    background-color: #b06328; /* Lighter on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px);
+}
+ /* Icons in menu */
+.sidebar a i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.sign-out {
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    right: 0;
+    background-color: #9b500d; /* Lighter burgundy */
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sign-out:hover {
+    background-color: #732e0b; /* Darker on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px);
+}
+
+.sign-out i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+  /* Main Container Style */
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #F7E8E8; /* Soft background color for main content */
+    overflow-y: auto;
+}
+
+/* Class Information Section */
+.class-info, .homework {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-info:hover, .homework:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.class-info h3, .homework h3 {
+    color: #8b3e0e;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #8b3e0e;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.class-info h3 i, .homework h3 i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.class-info p, .homework ul {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+.homework ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.homework ul li {
+    margin-bottom: 10px;
+}
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+    

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/animationCss/animate.min.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <!-- logo -->
+    <link rel="icon" type="image/x-icon" href="bg/icon-no-background.png" />
+    <title>Violin Vibes</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="navbar-container nav-bar w-100">
+          <h1 class="logo">ViolinVibes</h1>
+          <ul class="nav-links d-sm-flex d-none">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="lessons.html">Lessons</a></li>
+            <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+          <i class="fas fa-bars small-menu d-block d-sm-none" id="s-menu"></i>
+          <div class="small-menu-nav d-none" id="small-menu-nav">
+            <i class="fa fa-close" style="font-size: 24px" id="fa-close"></i>
+            <ul class="s-nav-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="about.html">About</a></li> -->
+              <li><a href="lessons.html">Lessons</a></li>
+              <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section class="parallax-hero">
+        <img src="images/home.jpg" alt="" />
+        
+        <h1 class="hero-title fade-in-left" id="hero_title">
+          Transforming Dreams into <br />
+          Beautiful violin Melodies 
+          
+        </h1>
+        <a href="#contact" class="cta-button fade-in-fwd"
+          >Start Playing Today – Schedule Your First Lesson!</a
+        >
+      </section>
+    </header>
+
+    <main>
+      <section class="about-section" id="about">
+        <div class="background-gradient"></div>
+        <div>
+          <div class="about-introduction">
+            <h2 class="section-title">About Us</h2>
+            <div class="subsection">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Our Mission</h5>
+                  <p class="card-text">
+                    Our mission on this site is to provide comprehensive and inspiring violin education for all levels.
+                    We are committed to creating a supportive and enriching environment where students can develop their skills and achieve their musical goals.
+                    Whether you're a beginner or advanced, our goal is to guide you in reaching your full potential.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Realizing Musical Aspirations</h5>
+                  <p class="card-text">
+                    If you’re looking to realize your musical dreams,
+                    our site is where you can achieve them.
+                    With professional support and precise training, success is within your reach.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Innovation in Learning</h5>
+                  <p class="card-text">
+                    Our site offers innovative tools and advanced teaching methods.
+                    From new techniques to creative exercises,
+                    you'll find everything you need for better learning here."
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Purposeful Practice</h5>
+                  <p class="card-text">
+                    "Use our site’s targeted educational programs to make your practice sessions effective and efficient.
+                    We’ll help you turn every practice into real progress."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cta-container">
+              <a href="#" class="cta-btn">
+                Explore Our Lesson Packages
+                <span class="arrow-icon">&#8594;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="gradient-overlay"></div>
+      </section>
+
+      <section class="ServicesSection">
+       
+        
+      </section>
+
+      <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h2 class="text-center mb-5">What Our Students Say</h2>
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Testimonial slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="testimonial-item">
+                      <div class="user-div">
+                        <img
+                          class="user-img"
+                          src="images/users/user-student1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="testi-stu-div">
+                        <div class="test-student">
+                          <h5 class="testimonial-author">Sophia Davis</h5>
+                          <p class="testimonial-designation">
+                            Beginner Student
+                          </p>
+                        </div>
+                        <p class="testimonial-text">
+                          "Learning violin on this site has been a transformative experience.
+                           The instructors' expertise and encouragement have truly elevated my skills and confidence.
+                           I wholeheartedly recommend this site to anyone passionate about mastering the violin!"
+                          
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-item">
+                      <div class="user-div">
+                        <img
+                          class="user-img"
+                          src="images/users/user-man-student.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="testi-stu-div">
+                        <div class="test-student">
+                          <h5 class="testimonial-author">William Thompson</h5>
+                          <p class="testimonial-designation">
+                            Advanced Student
+                          </p>
+                        </div>
+                        <p class="testimonial-text">
+                          learning violin on this site has been an exceptional experience for me.
+                          Each lesson is meticulously and deeply crafted to challenge me and guide me toward greater growth.
+                          The instructors, with their incredible expertise and artistic vision,
+                          have helped me not only master more complex techniques but also elevate my musical expression to a new level. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallax">
+        <div class="parallax-container">
+          <div class="parallax-content">
+            <p>contact us!</p>
+          </div>
+        </div>
+      </section>
+      <!--  removed class contact-info  -->
+      <section class="column">
+        <div class="in-touch">
+          <div class="phone-f">
+            <div>
+              <!-- <img
+                src="images/icons/icons8-phone-50.png"
+                alt=""
+                class="touch-style"
+              /> -->
+              <i class="fa-solid fa-phone icon-transform" style="color: #9a4a28;"></i>
+              <p><b>PHONE</b></p>
+            </div>
+            <div>
+              <span> +98 9301 555 123</span>
+            </div>
+            <div>
+              <span> +98 9303 333 321</span>
+            </div>
+          </div>
+
+          <div class="address-f">
+            <div>
+              <!-- <img
+                src="images/icons/icons8-location-50.png"
+                alt=""
+                class="touch-style2"
+              /> -->
+              <i class="fa-solid fa-compass icon-transform" style="color: #9a4a28;"></i>
+              <p><b>ADDRESS</b></p>
+            </div>
+            <div>
+              <p>
+                Violin Vibes Institute <br />
+                642 Music Street <br />
+                virtousotown, jazzland  <br />
+                art Land
+              </p>
+            </div>
+          </div>
+
+          <div class="email-f">
+            <div>
+              <!-- <img
+                src="images/icons/icons8-letter-50.png"
+                alt=""
+                class="touch-style2"
+              /> -->
+              <i class="fa-solid fa-envelope icon-transform" style="color: #9a4a28;"></i>
+              <p><b>EMAIL</b></p>
+            </div>
+            <div>
+              <p>lessons@ViolinvLessons.com</p>
+              <p>support@violinvSupport.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-contact">
+          <h5>
+            if you have any questions <br />
+            please do not hesitate to send us a message.
+          </h5>
+          <form action="#" class="forms">
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <br /><input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+            <br /><input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            >
+Message</textarea
+            >
+            <button class="submit-btn">send message</button>
+          </form>
+        </div>
+        <div class="social-networks"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container container-ed">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>ViolinVibes</h2>
+          </div>
+          <div class="footer-shortcuts">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#lessons">Lessons</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <p class="footer-credits">© 2024 ViolinVibes. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script>
+      function handleScroll() {
+        const navbar = document.getElementById("navbar");
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 110) {
+          navbar.classList.add("scrolled");
+          document.body.classList.add("sticky-nav");
+        } else {
+          navbar.classList.remove("scrolled");
+          document.body.classList.remove("sticky-nav");
+        }
+      }
+      window.addEventListener("scroll", handleScroll);
+
+      // small menu
+      let Smenu = document.getElementById("s-menu");
+      let closeIcon = document.getElementById("fa-close");
+      Smenu.addEventListener("click", function () {
+        let sMenuNav = document.getElementById("small-menu-nav");
+        let hasDnone = sMenuNav.classList;
+        if (hasDnone) {
+          sMenuNav.classList.remove("d-none");
+        } else {
+          sMenuNav.classList.add("d-none");
+        }
+      });
+      closeIcon.addEventListener("click", function () {
+        let sMenuNav = document.getElementById("small-menu-nav");
+        let doesntHavDnone = sMenuNav.classList;
+        if (doesntHavDnone) {
+          sMenuNav.classList.add("d-none");
+        } else {
+          sMenuNav.classList.remove("d-none");
+        }
+      });
+
+      // enroll lessons
+      document.addEventListener("DOMContentLoaded", function () {
+        const enrollButtons = document.querySelectorAll(".enroll-button");
+
+        enrollButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const subject = this.getAttribute("data-subject");
+            alert(`You have enrolled in ${subject} lessons!`);
+          });
+        });
+      });
+
+      // Schedule and Availability:
+      document.addEventListener("DOMContentLoaded", function () {
+        const scheduleTable = document.querySelector(".table");
+
+        // Get the current day (0: Sunday, 1: Monday, ..., 6: Saturday)
+        const currentDay = new Date().getDay();
+
+        // Highlight the row for the current day
+        if (currentDay > 0) {
+          const rows = scheduleTable.querySelectorAll("tbody tr");
+          rows[currentDay - 1].classList.add("highlighted");
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const eventsContainer = document.getElementById("events-container");
+
+        const eventsData = [
+          {
+            title: "Piano Workshop: Mastering Techniques",
+            date: "2023-08-15",
+            description:
+              "Join us for an intensive workshop on mastering piano techniques.",
+          },
+          {
+            title: "Music Theory Seminar: Exploring Harmony",
+            date: "2023-09-10",
+            description:
+              "Learn about advanced music theory concepts and explore harmony in music.",
+          },
+          {
+            title: "Beginner's Piano Recital",
+            date: "2023-10-05",
+            description:
+              "Celebrate the progress of our beginner students with their first piano recital.",
+          },
+          {
+            title: "Composition Workshop: Creating Original Music",
+            date: "2023-11-20",
+            description:
+              "Discover the art of composing music and creating your own original pieces.",
+          },
+          {
+            title: "Holiday Piano Showcase",
+            date: "2023-12-15",
+            description:
+              "Celebrate the holiday season with a special piano showcase featuring festive music.",
+          },
+          {
+            title: "Jazz Piano Masterclass",
+            date: "2024-01-25",
+            description:
+              "Learn the intricacies of jazz piano playing from experienced jazz pianists.",
+          },
+        ];
+
+        eventsData.forEach((event) => {
+          const eventCard = document.createElement("div");
+          eventCard.classList.add("col-md-6", "mb-4");
+          eventCard.innerHTML = `
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">${event.title}</h3>
+          <p class="card-text">${event.date}</p>
+          <p class="card-text">${event.description}</p>
+        </div>
+      </div>
+    `;
+          eventsContainer.appendChild(eventCard);
+        });
+      });
+    </script>
+  </body>
+</html>

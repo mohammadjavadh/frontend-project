@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <link rel="icon" type="image/x-icon" href="bg/icon-no-background.png" />
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <title>Violin Vibes</title>
+</head>
+<body>
+<header>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container nav-bar w-100">
+      <h1 class="logo">ViolinVibes</h1>
+      <ul class="nav-links d-sm-flex d-none">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="lessons.html">Lessons</a></li>
+        <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <i class="fas fa-bars small-menu d-block d-sm-none" id="s-menu"></i>
+      <div class="small-menu-nav d-none" id="small-menu-nav">
+        <i class="fa fa-close" style="font-size:24px" id="fa-close"></i>
+        <ul class="s-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="lessons.html">Lessons</a></li>
+          <!-- <li><a href="FAQ.html">FAQ</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+    <section class="contact-sec w-100 d-flex">
+        <div class="contact-wrap w-50 p-md-5 p-4">
+            <h3>Contact us</h3>
+            <p class="mb-4">We're always available. Contact us for any questions or needs.</p>
+            <div id="form-message-warning" class="mb-4"></div>
+            <div id="form-message-success" class="mb-4">
+            Your message was sent, thank you!
+            </div>
+            <div class="row mb-4">
+            <div class="col-md-4">
+            <div class="dbox w-100 d-flex align-items-start">
+            <div class="text">
+            <p>
+                <span>Address:</span> 123 Art Lane, 1011 AA Amsterdam, Netherlands</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="dbox w-100 d-flex align-items-start">
+            <div class="text">
+            <p><span>Email:</span> 
+                <a href="#">info@violinist.com</a></p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="dbox w-100 d-flex align-items-start">
+            <div class="text">
+            <p><span>Phone:</span> 
+                <a href="tel://1234567920">+ 0263 654 951</a></p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+            <div class="row">
+            <div class="col-md-12">
+            <div class="form-group">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+            </div>
+            </div>
+            <div class="col-md-12">
+            <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            </div>
+            <div class="col-md-12">
+            <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+            </div>
+            </div>
+            <div class="col-md-12">
+            <div class="form-group">
+            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea>
+            </div>
+            </div>
+            <div class="col-md-12 submitting-btn">
+            <div class="form-group">
+            <input type="submit" value="Send Message" class="btn btn-primary">
+            <div class="submitting"></div>
+            </div>
+            </div>
+            </div>
+            </form>
+            <div class="w-100 social-media mt-5">
+            <h3>Follow us here</h3>
+            <p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Dribbble</a>
+            </p>
+            </div>
+        </div>
+
+        <div class="w-50 contact-img">
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container container-ed">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>ViolinVibes</h2>
+        </div>
+        <div class="footer-shortcuts">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <p class="footer-credits">© 2024 ViolinVibes. All rights reserved.</p>
+    </div>
+</footer>
+      
+<!-- scripts -->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
